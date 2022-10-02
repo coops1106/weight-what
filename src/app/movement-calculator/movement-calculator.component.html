@@ -1,0 +1,15 @@
+<div>
+    <label for="max">One Rep Max: </label>
+    <div><input id="max" [(ngModel)]="max" (input)="update()">kg</div>
+    <div><input id="perc" [(ngModel)]="perc" (input)="update()">%</div>
+    <div>calculated: {{cweight}}kg</div>
+    <div>rounded: {{rweight}}kg</div>
+    <div>total plates: {{pweight}}kg</div>
+    <div>plate one side: {{hpweight}}kg</div>
+    <div>Number of 20kg plates: {{n20*2}}</div>
+    <div>Number of 15kg plates: {{n15*2}}</div>
+    <div>Number of 10kg plates: {{n10*2}}</div>
+    <div>Number of 5kg plates: {{n5*2}}</div>
+    <div>Number of 2.5kg plates: {{n2half*2}}</div>
+    <div>Number of 1.25kg plates: {{n1qtr*2}}</div>
+</div>
